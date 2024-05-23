@@ -1,0 +1,241 @@
+*{
+     margin:0;                       /*here * is caled as universal selector which  applies property on everything */
+    padding:0;
+    box-sizing:border-box;
+    font-family:'calibri';
+    color:#fff;
+
+}
+html, body {
+        
+    height: 100%;
+    width: 100%;
+}
+#cursor{
+    height: 20px;
+    width: 20px;
+    background-color:rgba(128, 255, 0, 0.457);
+    border-radius: 50%;
+    z-index: 9;
+    position: fixed;
+ }
+
+ #cursor-blurr{
+    height: 300px;
+    width: 200px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    position: fixed;
+    opacity: 100%; 
+    filter: blur(30px);
+
+ }
+
+#nav{
+    height: 100px;
+    width: 100%;
+    /* background-color:crimson;  */
+    display: inline-flex;
+    position: fixed; 
+    align-items: center;
+    padding-left: 110px;
+    padding: 0 150;
+    justify-content: flex-start;
+    gap: 30px;
+    z-index: 99;
+    justify-content: flex-start;
+    
+
+
+}
+#nav-img{
+    height: 60px;
+    width: 80px;
+}
+
+#nav h4{
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: fixed;
+    position:fixed;
+    
+}
+#main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.40);
+
+}
+#page1{
+     height: 100vh;     /* we give % it is like giv>ing someif measures according to its paresnts but bh means according to complete page height */
+    width: 110%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    flex-direction: column;
+    text-align: center;
+    z-index: 10;
+}
+#page1 h1{
+    font-size: 80px;
+    font-weight: 900 ;
+    
+}
+#page1 h2{
+    font-size: 30px;
+    font-weight: 500;
+    
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 10;
+}
+#scroller{
+    /* background-color: brown; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    animation-iteration-count: infinite;
+    position: relative;
+    z-index: 10;
+}
+#scroller::-webkit-scrollbar{
+    display: none ;
+}
+
+#scroller_1 {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+
+
+#scroller h4{
+    display:inline-block;
+    font-size: 100px;
+    font-weight: 550;
+    font-family: 'gilroy';
+    transition: 0.04s;
+    margin-right: 10px;
+    -webkit-text-stroke: 2px rgb(140, 255, 0);
+    color: transparent;
+    
+}
+
+#scroller h4 :hover{
+    color: rgb(140, 255, 0);
+}
+
+
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#about-us{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    /* background-color: brown; */
+    align-items: center;
+    padding: 0 50px;
+    justify-content: space-around;
+}
+
+#about-us img{
+    height: 200px;
+    width: 220px;
+    object-fit: cover;
+    border-radius: 20px;
+    image-orientation: inherit;
+    position: relative;
+    
+}
+
+#about-us-info{
+    width: 40%;
+    text-align: center;
+}
+
+#about-us-info h4{
+font-size: 50px;
+font-weight: 700;
+margin-bottom: 40px;
+}
+
+#about-us-info p{
+font-size: 20px;
+line-height: 25px;
+}
+
+#green-div{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to left bottom, rgb(70, 128, 0), rgb(162, 255, 0));
+}
+#green-div h4{
+    width: 45%;
+    line-height: 30px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 27px;
+    text-transform: uppercase;
+
+}
+
+#green-div img{
+    height: 100%;
+    object-fit: cover;
+    width: 14%;
+}
+
+
+#page3 {                            /* This notation shows that their is a paragraph directly in the page3 */
+    height: 30vh;
+    width: 100%;
+    /* background-color:black; */
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    color: transparent;
+    gap: 10px;
+  }
+  #page3 > p {
+    font-size: 30px;
+    font-weight: 500;
+    width: 60%;
+    line-height: 45px;
+    text-align: center;
+  }
+  
+  #page3 img {
+    position: absolute;
+    height: 13%;
+  }
+  #page3 #colon1 {
+    left: 15%;
+    top: 25%;
+  }
+  #page3 #colon2 {
+    bottom: 30%;
+    right: 15%;
+  }
