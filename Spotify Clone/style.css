@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background-color: gray;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Roboto',sans-serif;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.brand img{
+    height: 45px;
+    padding: 0 8px;
+}
+
+.container{
+    min-height: 72vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: black;
+    color:white;
+    display: flex;
+    margin: 25px auto;
+    width: 60%;
+    border-radius: 13px;
+    padding: 25px;
+    /* background-image: url('images/Spotify-Background-1.jpg'); */
+}
+
+.songlist img{
+    height: 65vh;
+    margin-top: 22px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-radius: 10px;
+    width: 60vw;
+}
+
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    color: azure;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#progressBar{
+    width:"80vw"
+}
+
+.icons{
+    margin-top: 35px;
+}
+
+.icons i{
+    cursor: pointer;
+    gap: 20px;
+}
+
+.songGif{
+    position: absolute;
+    left: 1;
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+}
